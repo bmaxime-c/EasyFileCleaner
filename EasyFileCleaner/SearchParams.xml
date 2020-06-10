@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SearchParams>
+  <SearchDirs>
+    <SearchDir path="F:\" includeSubfolders="true" />
+  </SearchDirs>
+  <Criterias>
+    <Criteria extension="asm" isNumbered="true" filename="" />
+  </Criterias>
+</SearchParams>

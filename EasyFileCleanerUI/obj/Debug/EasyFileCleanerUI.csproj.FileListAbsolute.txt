@@ -1,0 +1,11 @@
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.csprojAssemblyReference.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.Form1.resources
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.Properties.Resources.resources
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.csproj.GenerateResource.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.csproj.CoreCompileInputs.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\bin\Debug\EasyFileCleanerUI.exe.config
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\bin\Debug\EasyFileCleanerUI.exe
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\bin\Debug\EasyFileCleanerUI.pdb
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.exe
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\obj\Debug\EasyFileCleanerUI.pdb
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerUI\bin\Debug\SearchParams.xml

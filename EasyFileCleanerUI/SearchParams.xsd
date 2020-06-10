@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SearchParams"
+    targetNamespace="http://tempuri.org/SearchParams.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/SearchParams.xsd"
+    xmlns:mstns="http://tempuri.org/SearchParams.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+>
+    <xs:element name="SearchParams">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="Criterias">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Criteria" minOccurs="1" maxOccurs="unbounded" type="Criteria" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        <xs:element name="SearchDirs">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SearchDir" minOccurs="1" maxOccurs="unbounded" type="SearchDir" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+
+  <xs:complexType name="Criteria">
+    <xs:attribute name="filename" use="optional" type="xs:string" />
+    <xs:attribute name="extension" use="required" type="xs:string" />
+    <xs:attribute name="isNumbered" use="optional" type="xs:boolean" default="false" />
+  </xs:complexType>
+
+  <xs:complexType name="SearchDir">
+    <xs:attribute name="path" use="required" type="xs:string" />
+    <xs:attribute name="includeSubfolders" use="optional" type="xs:boolean" default="true" />
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,9 @@
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\bin\Debug\netcoreapp3.1\EasyFileCleaner.deps.json
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\bin\Debug\netcoreapp3.1\EasyFileCleaner.dll
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\bin\Debug\netcoreapp3.1\EasyFileCleaner.pdb
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\obj\Debug\netcoreapp3.1\EasyFileCleaner.csprojAssemblyReference.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\obj\Debug\netcoreapp3.1\EasyFileCleaner.AssemblyInfoInputs.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\obj\Debug\netcoreapp3.1\EasyFileCleaner.AssemblyInfo.cs
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\obj\Debug\netcoreapp3.1\EasyFileCleaner.csproj.CoreCompileInputs.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\obj\Debug\netcoreapp3.1\EasyFileCleaner.dll
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleaner\obj\Debug\netcoreapp3.1\EasyFileCleaner.pdb
