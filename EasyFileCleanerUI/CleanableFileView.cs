@@ -1,4 +1,4 @@
-﻿using EasyFileCleaner;
+﻿using EasyFileCleanerLib;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,20 +12,24 @@ namespace EasyFileCleanerUI
     {
         public bool ToDelete { get; set; }
 
-        public NumberedFileInfo Info { get; private set; }
+        public FileInfo Info { get; set; }
 
-        public int? FileNumber { get => Info.FileNumber; }
+        public int? FileNumber { get; private set; }
 
-        public string FileName { get => Info.FileName; }
+        public string FileName { get; private set; }
 
-        public string FilePath { get => Info.Info.FullName; }
+        public string FilePath { get; private set; }
 
-        public string FileExtension { get => Info.FileExtension; }
+        public string FileExtension { get; private set; }
 
-        public CleanableFileView(NumberedFileInfo fileInfo, bool toDelete = false)
+        public CleanableFileView(INumberedFileInfo fileInfo)
         {
-            ToDelete = toDelete;
-            Info = fileInfo;
+            ToDelete = fileInfo.ShouldBeDeleted;
+            FileNumber = fileInfo.FileNumber;
+            FileName = fileInfo.FileName;
+            FilePath = fileInfo.FullPath;
+            FileExtension = fileInfo.FileExtension;
+            Info = fileInfo.Info;
         }
     }
 }

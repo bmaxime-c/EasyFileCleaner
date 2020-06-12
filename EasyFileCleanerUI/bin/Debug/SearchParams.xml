@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SearchParams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/SearchParams.xsd">
   <Criterias>
-    <Criteria extension="asm" isNumbered="true" />
-    <Criteria extension="prt" isNumbered="true" />
-    <Criteria extension="dat" isNumbered="true" />
-    <Criteria filename="std" extension="err" isNumbered="false" />
+    <Criteria extension="asm" />
+    <Criteria extension="prt" />
+    <Criteria extension="dat" />
+    <Criteria filename="std" extension="err" keep="0" />
   </Criterias>
   <SearchDirs>
-    <SearchDir path="F:\1.2 BE 3D tube carré\" />
+    <SearchDir path="F:\1.2 BE 3D tube carré\" keep="2" />
   </SearchDirs>
 </SearchParams>

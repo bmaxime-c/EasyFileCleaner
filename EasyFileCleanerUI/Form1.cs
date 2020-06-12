@@ -1,4 +1,4 @@
-﻿using EasyFileCleaner;
+﻿using EasyFileCleanerLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,43 +14,28 @@ using System.Xml.Serialization;
 
 namespace EasyFileCleanerUI
 {
-    public partial class Form1 : Form
+    public partial class EasyFileCleanerMainUI : Form
     {
-        public List<CleanableFileView> AllFiles { get; set; }
+        public IList<CleanableFileView> AllFiles { get; set; }
 
-        public Form1()
+        public IConfigManager ConfigManager { get; set; }
+
+        public EasyFileCleanerMainUI()
         {
             InitializeComponent();
+            ConfigManager = new XmlConfigManager("SearchParams.xml");
+            ConfigManager.Load();
 
             DetectFiles();
         }
 
         private void DetectFiles()
         {
-            IDictionary<string, FileGroup> dico = FileManager.m();
-            CleanableFileView cleanableFile;
-
             AllFiles = new List<CleanableFileView>();
 
-            foreach (var d in dico.Values)
+            foreach (var d in FileParser.SearchForFiles(ConfigManager.Settings).OrderBy(f => f.FullPath).ThenBy(f => f.FileNumber))
             {
-                //Si les fichiers sont numérotés, on s'assure d'en garder au moins 2 versions
-                if (d.IsNumbered)
-                {
-                    var files = d.GetNumberedFiles();
-                    var count = files.Count();
-                    for (int i = 0; i < count; i++)
-                    {
-                        cleanableFile = new CleanableFileView(files.ElementAt(i), i < (count - 2));
-                        AllFiles.Add(cleanableFile);
-                    }
-                }
-                else
-                {
-                    //Fichier non numéroté, de fait la liste ne peut contenir qu'un seul fichier
-                    cleanableFile = new CleanableFileView(d[0], true);
-                    AllFiles.Add(cleanableFile);
-                }
+                AllFiles.Add(new CleanableFileView(d));
 
             }
             numberedFileInfoBindingSource.DataSource = AllFiles;
@@ -72,7 +57,7 @@ namespace EasyFileCleanerUI
             {
                 foreach(var d in toDelete)
                 {
-                    d.Info.Info.Delete();
+                    d.Info.Delete();
                 }
 
                 DetectFiles();

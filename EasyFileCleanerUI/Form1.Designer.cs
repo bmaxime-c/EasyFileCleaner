@@ -1,6 +1,6 @@
 ﻿namespace EasyFileCleanerUI
 {
-    partial class Form1
+    partial class EasyFileCleanerMainUI
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EasyFileCleanerMainUI));
+            this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ToDelete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.FileName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,18 +43,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.numberedFileInfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Location = new System.Drawing.Point(651, 307);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(210, 28);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.Text = "Supprimer les éléments sélectionnés...";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -64,14 +69,15 @@
             this.FilePath});
             this.dataGridView1.DataSource = this.numberedFileInfoBindingSource;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 129);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 94);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1222, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(852, 209);
             this.dataGridView1.TabIndex = 1;
             // 
             // ToDelete
@@ -111,12 +117,13 @@
             // 
             // FilePath
             // 
+            this.FilePath.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.FilePath.DataPropertyName = "FilePath";
             this.FilePath.HeaderText = "Chemin";
             this.FilePath.MinimumWidth = 6;
             this.FilePath.Name = "FilePath";
             this.FilePath.ReadOnly = true;
-            this.FilePath.Width = 500;
+            this.FilePath.Width = 67;
             // 
             // numberedFileInfoBindingSource
             // 
@@ -124,25 +131,29 @@
             // 
             // cbShowSelectedElements
             // 
+            this.cbShowSelectedElements.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cbShowSelectedElements.AutoSize = true;
-            this.cbShowSelectedElements.Location = new System.Drawing.Point(12, 381);
+            this.cbShowSelectedElements.Location = new System.Drawing.Point(9, 318);
+            this.cbShowSelectedElements.Margin = new System.Windows.Forms.Padding(2);
             this.cbShowSelectedElements.Name = "cbShowSelectedElements";
-            this.cbShowSelectedElements.Size = new System.Drawing.Size(322, 21);
+            this.cbShowSelectedElements.Size = new System.Drawing.Size(243, 17);
             this.cbShowSelectedElements.TabIndex = 2;
             this.cbShowSelectedElements.Text = "Afficher uniquement les éléments sélectionnés";
             this.cbShowSelectedElements.UseVisualStyleBackColor = true;
             this.cbShowSelectedElements.CheckedChanged += new System.EventHandler(this.cbShowSelectedElements_CheckedChanged);
             // 
-            // Form1
+            // EasyFileCleanerMainUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1246, 450);
-            this.Controls.Add(this.cbShowSelectedElements);
+            this.ClientSize = new System.Drawing.Size(872, 346);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.cbShowSelectedElements);
+            this.Controls.Add(this.btnDelete);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "EasyFileCleanerMainUI";
+            this.Text = "EasyFileCleaner UI";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberedFileInfoBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -152,18 +163,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource numberedFileInfoBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn fileNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fileExtensionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn filePathDataGridViewTextBoxColumn;
+        private System.Windows.Forms.CheckBox cbShowSelectedElements;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ToDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn FileName;
         private System.Windows.Forms.DataGridViewTextBoxColumn FileExtension;
         private System.Windows.Forms.DataGridViewTextBoxColumn fileNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn FilePath;
-        private System.Windows.Forms.CheckBox cbShowSelectedElements;
     }
 }
 

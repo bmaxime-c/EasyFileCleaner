@@ -1,0 +1,12 @@
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\EasyFileCleanerLib.dll
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\EasyFileCleanerLib.pdb
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\AutoMapper.dll
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\Newtonsoft.Json.dll
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\AutoMapper.pdb
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\AutoMapper.xml
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\bin\Release\Newtonsoft.Json.xml
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\obj\Release\EasyFileCleanerLib.csprojAssemblyReference.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\obj\Release\EasyFileCleanerLib.csproj.CoreCompileInputs.cache
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\obj\Release\EasyFileCleanerLib.csproj.CopyComplete
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\obj\Release\EasyFileCleanerLib.dll
+C:\Users\bmaxi\source\repos\EasyFileCleaner\EasyFileCleanerLib\obj\Release\EasyFileCleanerLib.pdb
